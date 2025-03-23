@@ -49,13 +49,18 @@ body {
 }
 
 .star {
-    width: 50px;
-    height: 50px;
-    background-color: red;
+    width: 80px;
+    height: 80px;
+    background-color: #9e1faf; /* Fioletowy kolor */
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    transition: opacity 0.3s ease;
-    opacity: 0.4;
+    transition: opacity 0.3s ease, transform 0.2s ease; /* Dodajemy animację transformacji */
+    opacity: 0.7;
+    box-shadow: 0 0 15px rgba(158, 31, 175, 0.7); /* Poświata wokół gwiazdki */
+    background-image: linear-gradient(45deg, rgba(158, 31, 175, 0.8), rgba(24, 39, 110, 0.8)); /* Gradient fioletowo-niebieski */
+    background-size: 200% 200%;
 }
+
+
 
 .draggable:hover .star {
     opacity: 0.8;
