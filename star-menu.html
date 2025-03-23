@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="star.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="star.js" defer></script>
 </head>
 <body>
-    <div id="draggable" class="draggable">
-        <div class="star"></div>
-    </div>
-    <div id="sideMenu" class="side-menu">
-        <div class="menu-content">
-            <h2>Title :3</h2>
-            <p>Sidemenu Content</p>
-            <button onclick="closeSideMenu()">Close?</button>
+    <div class="content">
+        <div class="stars" id="stars"></div>
+        <div class="draggable" id="draggable">
+            <div class="star"></div>
         </div>
+        <div class="side-menu" id="sideMenu">
+            <div class="menu-content">
+                <h2>Title :3</h2>
+                <p>Sidemenu Content</p>
+                <button onclick="closeSideMenu()">Close?</button>
+            </div>
+        </div>
+        <header class="header">
+            <div class="logo">LOGO</div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#login">Log in</a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
-
 </body>
 </html>
